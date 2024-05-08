@@ -26,4 +26,4 @@ jobs:
           key: ${{ runner.os }}-precommit-${{ hashFiles('.pre-commit-config.yaml') }}
 
       - name: Run pre-commit
-        run: pre-commit run --all-files
+        run: pdm run pre-commit run --all-files
