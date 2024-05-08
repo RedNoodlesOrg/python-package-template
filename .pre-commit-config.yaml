@@ -39,6 +39,7 @@ repos:
     rev: v2.2.6
     hooks:
       - id: codespell
+        args: ["--skip=pdm.lock"]
 
   - repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
